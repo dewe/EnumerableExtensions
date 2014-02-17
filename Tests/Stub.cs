@@ -17,6 +17,7 @@ namespace Tests
             CallsToGetEnumerator++;
             while (true)
             {
+                Console.WriteLine("Before yield at " + IndexOfYield);
                 yield return IndexOfYield++;
             }
         }
